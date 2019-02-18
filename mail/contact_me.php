@@ -11,7 +11,7 @@ if(empty($_POST['name'])      ||
    }
    
 $name = strip_tags(htmlspecialchars($_POST['name']));
-$email_address = strip_tags(htmlspecialchars($_POST['email']));
+$email_address = strip_tags(htmlspecialchars($_POST['email'])); //testing
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
