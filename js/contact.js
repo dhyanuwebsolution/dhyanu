@@ -66,9 +66,11 @@ $(function () {
         e.preventDefault();
         $(this).tab("show");
     });
+    
+ /*When clicking on Full hide fail/success boxes */
+  $('#name').focus(function () {
+    $('#success').html('');
+  });
+
 });
 
-/*When clicking on Full hide fail/success boxes */
-$('#name').focus(function () {
-    $('#success').html('');
-});
