@@ -19,16 +19,20 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-                url: "././mail/contact_me.php",
+                url:"https://functiondhyanuwebsolution.azurewebsites.net/api/HttpTrigger1?code=ss1gLXmvaQDeqvbElPWa8WgGOT0vpttleqsynnAeCwj1g4UYfKbxmg==", // "././mail/contact_me.php",
                 type: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
+                     "name": "Azure"
+                  },
+                //{
+                 //   name: name,
+                 //   phone: phone,
+                 //   email: email,
+                 //   message: message
+                //},
                 cache: false,
-                success: function () {
+                success: function (result) {
+                    console.log(result);
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
