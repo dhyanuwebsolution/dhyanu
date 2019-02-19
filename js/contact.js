@@ -21,9 +21,9 @@ $(function () {
             $.ajax({
             url:"https://functiondhyanuwebsolution.azurewebsites.net/api/HttpTrigger1?code=ss1gLXmvaQDeqvbElPWa8WgGOT0vpttleqsynnAeCwj1g4UYfKbxmg==",
             type: "POST",
-            data: {
+            data: JSON.stringify({
                      "name": "Azure"
-                  },
+                  }),
             contentType: "application/json; charset=UTF-8",
             dataType: "json",
             success: function (results) {
