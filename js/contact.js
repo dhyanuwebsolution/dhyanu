@@ -24,8 +24,7 @@ $(function () {
             data: JSON.stringify({ "name": name,"email": email,"phone": phone,"message": message }),
             contentType: "application/json; charset=UTF-8",
             dataType: "json",
-            success: function (results) {
-                console.log(result);
+            success: function () {
                 $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
