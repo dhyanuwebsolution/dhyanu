@@ -19,7 +19,7 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-            url:"https://dhyanuapi.azurewebsites.net/api/SendGridEmail?code=wF9Uo6C04i2Prkcr8H8D4XomKDruVuebdYATMnTvPIW2VH8qOjK3FOP82rgcmurUBQUotfzaZUMMSYVE2sJVfA==",
+            url:"https://dhyanuapi.azurewebsites.net/api/SendGridEmail?code=FHn5lDyB/jw7cUjK8oMnYMZRUzKgN7acdxPAuGDHlTjQF4r3T5c78w==",
             type: "POST",
             data: JSON.stringify({ "OrderId": 12345, "CustomerName": "Sejal Panchal", "CustomerEmail": "sejaldhaval@gmail.com" }),
             contentType: "application/json; charset=UTF-8",
